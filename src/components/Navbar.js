@@ -18,7 +18,7 @@ const Navbar = () => {
               <div className="flex flex-row items-center justify-between p-4">
                 <Link
                   to={"/dashboard"}
-                  className={`text-2xl font-bold tracking-widest uppercase rounded-lg dark-mode:text-white  text-secondary`}
+                  className={`text-2xl font-bold tracking-widest uppercase rounded-lg dark-mode:text-white  text-primary`}
                 >
                   BlueGuard
                 </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
                   onClick={toggleSidebar}
                   to={"/dashboard/all-orders"}
                 >
-                  All Delivery
+                  All Orders
                 </Link>
                 <Link
                   className={`px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 ${

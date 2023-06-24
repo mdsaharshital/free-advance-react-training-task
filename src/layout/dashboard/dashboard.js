@@ -15,8 +15,8 @@ const Dashboard = () => {
             <h1 className="text-primary text-7xl md:text-[100px] text-center font-bold">
               BlueGuard
             </h1>
-            <h1 className="text-accent text-2xl md:text-[40px] text-center font-bold">
-              A Brand to believe in
+            <h1 className="text-accent text-2xl md:text-[40px] text-center font-bold capitalize">
+              A Brand you believe in
             </h1>
           </div>
         )}

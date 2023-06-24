@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -18,9 +19,7 @@ code {
 
 .gradient {
   height: fit-content;
-  /* z-index: 1; */
-  /* width: 100%;
-  max-width: 640px; */
+  z-index: -1;
   background-image: radial-gradient(
       at 27% 37%,
       hsla(215, 98%, 61%, 1) 0px,

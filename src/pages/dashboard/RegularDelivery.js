@@ -7,7 +7,7 @@ const RegularDelivery = () => {
   const filteredDelivery = orderData.filter(
     (o) => o.deliveryType === "Regular"
   );
-  if (loading) return <p>Loading......</p>;
+  if (loading) return <p></p>;
   return (
     <section>
       <h1 className="text-2xl text-center mt-8 font-bold">
