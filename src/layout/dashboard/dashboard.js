@@ -6,9 +6,9 @@ const Dashboard = () => {
   const { pathname } = useLocation();
   console.log("pa", pathname);
   return (
-    <div className="h-full">
-      {" "}
+    <div className="h-full ">
       <div className={`min-h-screen max-w-[1600px] mx-auto h-full`}>
+        <div className="gradient"></div>
         <Navbar />
         {pathname === "/dashboard" && (
           <div className="flex gap-6 flex-col justify-center items-center h-[90vh]">
