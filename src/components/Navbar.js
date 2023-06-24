@@ -23,21 +23,41 @@ const Navbar = () => {
                   BlueGuard
                 </Link>
                 <button
-                  className="rounded-lg bg-secondary md:hidden "
+                  className="rounded-lg text-black md:hidden "
                   onClick={toggleSidebar}
                 >
-                  <svg
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    className="w-6 h-6"
-                  >
-                    {/* SVG paths */}
-                  </svg>
+                  {!isSidebarOpen ? (
+                    <svg
+                      className="w-5 h-5 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  ) : (
+                    <svg
+                      className="w-5 h-5 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                  )}
                 </button>
               </div>
               <nav
                 className={`flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row ${
-                  isSidebarOpen ? "block" : "hidden"
+                  isSidebarOpen ? "block  mx-auto" : "hidden"
                 }`}
               >
                 <Link
